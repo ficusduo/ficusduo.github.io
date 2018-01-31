@@ -2,6 +2,22 @@ body,
 html {
   width: 100%;
   height: 100%; }
+  @media (max-width: 480px) {
+    body,
+    html {
+      font-size: 14px; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    body,
+    html {
+      font-size: 14px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    body,
+    html {
+      font-size: 15px; } }
+  @media (min-width: 992px) {
+    body,
+    html {
+      font-size: 16px; } }
 
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
@@ -32,7 +48,7 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px; }
 
@@ -83,6 +99,39 @@ body {
 
 #contact .row i.fa {
   margin-bottom: 0.15em; }
+
+/* Headings */
+@media (max-width: 480px) {
+  .row h2,
+  .container h2 {
+    font-size: 1.5rem; }
+  .row h3,
+  .container h3 {
+    font-size: 1.2em; } }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .row h2,
+  .container h2 {
+    font-size: 1.5rem; }
+  .row h3,
+  .container h3 {
+    font-size: 1.2em; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .row h2,
+  .container h2 {
+    font-size: 1.7rem; }
+  .row h3,
+  .container h3 {
+    font-size: 1.2em; } }
+
+@media (min-width: 992px) {
+  .row h2,
+  .container h2 {
+    font-size: 2rem; }
+  .row h3,
+  .container h3 {
+    font-size: 1.2em; } }
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
@@ -152,7 +201,7 @@ body {
 header.masthead {
   position: relative;
   width: 100%;
-  min-height: auto;
+  min-height: 100vh !important;
   text-align: center;
   color: white;
   background-image: url("../img/header.jpg");
